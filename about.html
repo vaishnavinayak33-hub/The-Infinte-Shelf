@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>About - Infinite Shelf</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+<img src="logo.jpeg">
+</div>
+
+<div class="menu">
+
+<div class="nav-links">
+
+<a href="index.html">Home</a>
+<a href="products.html">Products</a>
+<a href="services.html">Services</a>
+<a href="contact.html">Contact</a>
+<a href="about.html">About us</a>
+
+</div>
+
+<div class="cart" onclick="toggleCart()">
+🛒 Cart <span id="cartCount" class="cart-count">0</span>
+</div>
+
+</div>
+
+</header>
+
+<section class="page">
+
+<h1>About Infinite Shelf</h1>
+
+<p>
+Infinite Shelf is a student-focused startup created to make engineering
+study materials more affordable and accessible. Many students struggle
+to buy expensive textbooks and lab equipment, so our platform provides
+second-hand engineering books and essential academic tools at lower prices.
+</p>
+
+<h3>Our Mission</h3>
+
+<ul align="left">
+<li>Make engineering study materials affordable for students</li>
+<li>Encourage reuse of second-hand books</li>
+<li>Provide essential lab and academic equipment in one place</li>
+<li>Support engineering students throughout their academic journey</li>
+</ul>
+
+<h3>What We Offer</h3>
+
+<ul align="left">
+<li>Second-hand engineering textbooks</li>
+<li>Scientific calculators</li>
+<li>Lab coats for practical sessions</li>
+<li>EGD (Engineering Graphics) kits</li>
+</ul>
+
+<p>
+Our goal is to help engineering students save money while still getting
+the resources they need to succeed in their studies.
+</p>
+
+</section>
+
+<div class="cart-panel" id="cartPanel">
+
+<div class="cart-header">
+
+<h3>Your Cart</h3>
+
+</div>
+
+<ul id="cartItems"></ul>
+
+<div class="cart-footer">
+
+<button onclick="clearCart()" class="clear-cart">Clear Cart</button>
+
+</div>
+
+</div>
+
+<footer>
+
+<div class="footer-container">
+
+<div class="footer-col">
+
+<h3 class="logo">Infinite Shelf</h3>
+
+<p>
+Helping engineering students find affordable books, calculators,
+lab coats and EGD kits in one place.
+</p>
+
+<div class="social-icons">
+
+<a href="#"><i class="fab fa-linkedin"></i></a>
+<a href="#"><i class="fab fa-instagram"></i></a>
+<a href="#"><i class="fab fa-twitter"></i></a>
+<a href="#"><i class="fab fa-github"></i></a>
+
+</div>
+
+</div>
+
+<div class="footer-col">
+
+<h4>Quick Links</h4>
+
+<a href="index.html">Home</a>
+<a href="products.html">Products</a>
+<a href="services.html">Services</a>
+<a href="contact.html">Contact</a>
+<a href="about.html">About us</a>
+
+</div>
+
+<div class="footer-col">
+
+<h4>Resources</h4>
+
+<a href="#">Engineering Books</a>
+<a href="#">Student Tools</a>
+<a href="#">Study Resources</a>
+<a href="#">Campus Support</a>
+
+</div>
+
+<div class="footer-col">
+
+<h4>Contact</h4>
+
+<p>Email: hello@infiniteshelf.com</p>
+<p>Location: Mumbai, India</p>
+
+</div>
+
+</div>
+
+<div class="footer-bottom">
+
+<p>© 2026 Infinite Shelf | Student Essentials Store</p>
+
+</div>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>The Infinite Shelf</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body onload="welcomeMessage()">
+
+<!-- HEADER -->
+
+<header>
+
+<nav class="menu">
+
+<div class="logo">
+<img src="logo.jpeg" alt="Infinite Shelf Logo">
+</div>
+
+<div class="nav-links">
+<a href="index.html">Home</a>
+<a href="products.html">Products</a>
+<a href="services.html">Services</a>
+<a href="contact.html">Contact</a>
+<a href="about.html">About us</a>
+</div>
+
+<div class="cart" onclick="toggleCart()">
+🛒 Cart <span id="cartCount" class="cart-count">0</span>
+</div>
+
+</nav>
+
+</header>
+
+
+<!-- HERO SECTION -->
+
+<section class="hero">
+
+<h1>Your Engineering Essentials in One Place</h1>
+
+<p>From Books to Tools — We've got you covered.</p>
+
+<a class="btn" href="products.html">Explore Products</a>
+
+</section>
+
+
+<!-- FEATURED PRODUCTS -->
+
+<section class="page">
+
+<h1>Our products</h1>
+
+<div class="card-container">
+
+<div class="card">
+
+<img src="phy.jpeg" alt="Engineering Books">
+
+<h3>Engineering Books</h3>
+
+<p>Physics, Chemistry, Mathematics study material.</p>
+
+<p class="price">Rs. 350</p>
+
+<button onclick="addToCart('Engineering Books',350)">Add to Cart</button>
+
+</div>
+
+
+<div class="card">
+
+<img src="cal.jpeg" alt="Engineering Calculator">
+
+<h3>Engineering Calculator</h3>
+<p>Advanced calculator for engineering students.</p>
+
+<p class="price">Rs. 500</p>
+
+<button onclick="addToCart('Calculator',500)">Add to Cart</button>
+
+</div>
+
+
+<div class="card">
+
+<img src="egd.jpeg" alt="Lab Coat">
+
+<h3>EGD Kit</h3>
+<p>All essentials tools at one place.</p>
+
+<p class="price">Rs. 250</p>
+
+<button onclick="addToCart('EGD kit',150)">Add to Cart</button>
+
+</div>
+<div class="card">
+
+<img src="coat.jpeg" alt="Lab Coat">
+
+<h3>Chemistry Lab coat</h3>
+
+<p>Get Your Chemistry Lab Coat Here.</p>
+
+<p class="price">Rs. 150</p>
+
+<button onclick="addToCart('Lab Coat',150)">Add to Cart</button>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- CART PANEL -->
+
+<div class="cart-panel" id="cartPanel">
+
+<div class="cart-header">
+
+<h3>Your Cart</h3>
+
+</div>
+
+<ul id="cartItems"></ul>
+
+<div class="cart-footer">
+
+<button onclick="clearCart()" class="clear-cart">Clear Cart</button>
+
+</div>
+
+</div>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<div class="footer-container">
+
+<div class="footer-col">
+
+<h3 class="footer-logo">Infinite Shelf</h3>
+
+<p>
+Engineering essentials for students — books, tools, and lab supplies.
+</p>
+
+<div class="social-icons">
+
+<a href="https://www.linkedin.com/company/levelupevents"><i class="fab fa-linkedin"></i></a>
+<a href="https://www.instagram.com/levelupofficial.in/"><i class="fab fa-instagram"></i></a>
+<a href="https://discord.com/invite/5WjkenMeHC"><i class="fab fa-discord"></i></a>
+<a href="https://youtube.com/@levelupofficial-in"><i class="fab fa-youtube"></i></a>
+
+</div>
+
+</div>
+
+
+<div class="footer-col">
+
+<h4>Quick Links</h4>
+
+<a href="index.html">Home</a>
+<a href="products.html">Products</a>
+<a href="services.html">Services</a>
+<a href="contact.html">Contact</a>
+<a href="about.html">About</a>
+
+</div>
+
+
+<div class="footer-col">
+
+<h4>Resources</h4>
+
+<a href="#">Study Materialss</a>
+<a href="#">Useful Tools</a>
+<a href="#">Product Guides</a>
+<a href="#">Student Help</a>
+
+</div>
+
+
+<div class="footer-col">
+
+<h4>Contact</h4>
+
+<p>Email: hello@infiniteshelf.com</p>
+<p>Location: Mumbai, India</p>
+
+</div>
+
+</div>
+
+
+<div class="footer-bottom">
+
+<p>© 2026 Infinite Shelf | Engineering Essentials</p>
+
+</div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
